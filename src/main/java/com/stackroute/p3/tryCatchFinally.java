@@ -9,8 +9,8 @@ public class tryCatchFinally {
 
             int arr[] = new int[5];
 
-            for(int i=0; i<10;i++)
-            {
+            for(int i=0; i<10;i++)            //added a new throws scenario
+            {                                  //arrayOutOfBoundException
                     arr[i] = 1;
             }
 
