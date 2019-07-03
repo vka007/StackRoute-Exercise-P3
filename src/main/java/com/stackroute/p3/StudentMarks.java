@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class StudentMarks {
 
-    public static void main(String[] args)
+    public static void main(String[] args)  //main method
     {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,28 +16,21 @@ public class StudentMarks {
 
         int stuGrades[] = new int[numOfStudents];
 
-        for(int i=0; i<numOfStudents;i++)
+        for(int i=0; i<numOfStudents;i++)           //loop to take grades
         {
             stuGrades[i] = scanner.nextInt();
         }
 
-        String Result = checkMarks(stuGrades);
+        String Result = checkMarks(stuGrades);         //method call
 
         System.out.println(Result);
 
     }
 
-    /*
-    public static void getMarks(int numOfStudents)
+    public static String checkMarks(int stuGrades[])        //method body
     {
 
-    }*/
-
-
-    public static String checkMarks(int stuGrades[])
-    {
-
-        for (int i=0; i<stuGrades.length;i++)
+        for (int i=0; i<stuGrades.length;i++)               //loop to check valid grades
         {
             if(stuGrades[i]<0 || stuGrades[i]>100)
             {

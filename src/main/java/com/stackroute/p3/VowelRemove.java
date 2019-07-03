@@ -2,45 +2,19 @@ package com.stackroute.p3;
 
 public class VowelRemove {
 
-    public static void main(String[] args)
+    public static void main(String[] args)         //main method
     {
         String palces[] = {"aaaaa"};
 
-        removeVowelsFromPlaces(palces);
+        removeVowelsFromPlaces(palces);             //method call
     }
 
-    public static String[] removeVowelsFromPlaces(String places[])
+    public static String[] removeVowelsFromPlaces(String places[])         //method body
     {
-       /* int length = places.length;
-        String Result = "";
-        String fResult = "";
 
-        for (int i=0;i<length;i++)
+        for (int i=0;i< places.length;i++)                      //loop to remove vowels
         {
-            System.out.println("Hii");
-            System.out.println(places[i].length());
-            //System.out.println(places[i].charAt(0));
-
-            for(int j=1;j<places[i].length();j++)
-            {
-                Result = ""+places[i].charAt(0);
-                System.out.println("hello");
-
-                if((places[i].charAt(j)!='a') && (places[i].charAt(j)!='e') && (places[i].charAt(j)!='i')
-                && (places[i].charAt(j)!='o') && (places[i].charAt(j)=='u'))
-                {
-                    Result = Result + places[i].charAt(j);
-                    System.out.println(places[i].charAt(j));
-                    System.out.println("Hi");
-                }
-            }
-
-
-        */
-
-        for (int i=0;i< places.length;i++)
-        {
-            places[i] = places[i].replaceAll("aeiouAEIOU","");
+            places[i] = places[i].replaceAll("aeiouAEIOU","");      //replace functions
         }
 
         return places;
